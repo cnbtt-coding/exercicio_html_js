@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div id="form">
+            <div class="container">
+                <h1>Validação</h1>
+                <div class="border"></div>
+                <p id="success">Formulário validado com sucesso !</p>
+                <p id="fail">*O campo B deve conter um valor superior ao valor do campo A para que o formulário funcione*</p>
+                <form>
+                <input id="campoA" type="number" required placeholder="Valor campo A">
+                <input id="campoB" type="number" required placeholder="Valor campo B">
+                <button type="submit" id="submit-button" class="submit">Continuar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
