@@ -17,6 +17,7 @@ body {
     background-image: url(./media/fundo-liso-rosa-e-amarelo.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 main .container {
