@@ -9,6 +9,8 @@ document.getElementById("form").addEventListener("submit", function(event) {
         document.getElementById("success").style.display = "block";
         document.getElementById("fail").style.display = "none";
         document.querySelector(".container").style.height = "275px";
+        document.getElementById("campoA").value = "";
+        document.getElementById("campoB").value = "";
     } else {
         // Se o formulário estiver preenchido incorretamente
         document.getElementById("success").style.display = "none";
