@@ -6,15 +6,21 @@ document.getElementById("form").addEventListener("submit", function(event) {
 
     if (campoA < campoB) {
         // Se o formulário estiver preenchido corretamente
-        document.getElementById("success").style.display = "block";
+        document.getElementById("campoA").style.display = "none";
+        document.getElementById("campoB").style.display = "none";
+        document.getElementById("redo").style.display = "block";
+        document.querySelector(".container").style.height = "180px";
+        document.getElementById("submit-button").style.display ="none";
         document.getElementById("fail").style.display = "none";
-        document.querySelector(".container").style.height = "275px";
+        document.getElementById("success-button").style.display = "block";
+        document.getElementById("success-button").disabled = "true"
         document.getElementById("campoA").value = "";
         document.getElementById("campoB").value = "";
     } else {
         // Se o formulário estiver preenchido incorretamente
-        document.getElementById("success").style.display = "none";
         document.getElementById("fail").style.display = "block";
+        document.getElementById("submit-button").style.display ="block";
+        document.getElementById("success-button").style.display = "none";
         document.querySelector(".container").style.height = "300px";
     }
 });
